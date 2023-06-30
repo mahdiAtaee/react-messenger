@@ -1,0 +1,147 @@
+.Main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 1px solid var(--gray-color);
+  background-color: var(--light-blue-color);
+  padding-right: 1rem;
+}
+
+.Main .header .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.Main .header .right-section .profile {
+  margin-left: 0.5rem;
+}
+
+.Main .header .right-section .profile img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Main .header .right-section .channel-name {
+  font-size: calc(var(--text-size) + 0.2rem);
+  cursor: pointer;
+}
+
+.Main .header .right-section .channel-description {
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+
+.Main .header .left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.Main .header .left-section .participants,
+.Main .header .left-section .participants ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+}
+
+.Main .header .left-section .participants ul li {
+  list-style: none;
+  margin-left: -0.6rem;
+}
+
+.Main .header .left-section .participants ul li .other-participant {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #929292;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Main .header .left-section .participants ul li .other-participant span {
+  color: #fff;
+  font-size: var(--text-size);
+}
+
+.Main .header .left-section .participants ul li .participant-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.Main .header .left-section .more-settings {
+  cursor: pointer;
+  position: relative;
+}
+
+.Main .header .left-section .more-settings .icon img{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.Main .header .left-section .more-settings .more-setting-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 170px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.Main .header .left-section .more-settings .more-setting-items li {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  position: relative;
+}
+
+.Main .header .left-section .more-settings .more-setting-items li:hover {
+  background-color: var(--gray-color);
+}
+
+.Main
+  .header
+  .left-section
+  .more-settings
+  .more-setting-items
+  li
+  span.more-setting-title {
+  font-size: calc(var(--text-size) - 0.1rem);
+}
+
+.Main .header .left-section .more-settings .more-setting-items li span.icon {
+  margin-left: 0.6rem;
+}
+
+.Main
+  .header
+  .left-section
+  .more-settings
+  .more-setting-items
+  li
+  span.icon
+  img {
+  width: 20px;
+  height: 20px;
+  filter: none;
+}
+
+.Main .header .left-section .more-settings .more-setting-items li:first-child::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background: var(--gray-color);
+}

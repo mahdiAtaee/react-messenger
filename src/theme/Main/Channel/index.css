@@ -1,0 +1,115 @@
+@import "./Header.css";
+@import "./Footer.css";
+
+.Main {
+  background: url("../../../assets/images/Background.jpg") center center;
+  background-position: center;
+  background-size: cover;
+}
+
+.Main .channel .container {
+  overflow-y: scroll;
+  height: calc(100vh - 126px);
+  padding-bottom: 2rem;
+}
+
+.Main .channel .container .row.post-wrapper {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  position: relative;
+}
+
+.Main .channel .container .row.post-wrapper.selected{
+  background-color: #168af77c;
+} 
+
+.Main .channel .container .post-container {
+  background: #fff;
+  border-radius: 25px;
+  position: relative;
+  z-index: 5;
+}
+
+.Main .channel .container .post-container .post-header {
+  padding: 0.3rem 1rem;
+  text-align: right;
+}
+
+.Main .channel .container .post-container .post-image-wrapper {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+
+.post-container .post-image-wrapper .post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Main .channel .container .post-container .post-content {
+  padding: 1rem;
+}
+
+.Main .channel .container .post-container .post-content .reactions {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.Main .channel .container .post-container .post-content .reactions .reaction {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background: var(--cyan-color);
+  border-radius: 20px;
+  cursor: pointer;
+  width: 60px;
+  height: 45px;
+  transition: 0.4s ease;
+}
+
+.Main
+  .channel
+  .container
+  .post-container
+  .post-content
+  .reactions
+  .reaction.selected {
+  background-color: var(--light-blue-color);
+}
+
+.Main
+  .channel
+  .container
+  .post-container
+  .post-content
+  .reactions
+  .reaction
+  img {
+  width: 20px;
+}
+
+.Main
+  .channel
+  .container
+  .post-container
+  .post-content
+  .reactions
+  .reaction
+  img {
+  vertical-align: -4px;
+  margin-right: 0.4rem;
+}
+
+.Main
+  .channel
+  .container
+  .post-container
+  .post-content
+  .reactions
+  .reaction
+  .reaction-counter {
+  margin-right: 0.5rem;
+}
+ 

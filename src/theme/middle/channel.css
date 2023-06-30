@@ -1,0 +1,41 @@
+.channel-list .nav-item {
+  margin-bottom: 1rem;
+}
+
+.channel-list a {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  padding-right: 0;
+}
+
+.channel-list a .channel-profile {
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.channel-list a .channel-profile img {
+  width: 60px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.channel-list a .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.channel-list a .content span.channel-name,
+.channel-list a .content span.channel-summary {
+  color: var(--text-color);
+  font-size: calc(var(--text-size) + 0.1rem);
+  font-family: inherit;
+}
+
+.channel-list a .content span.channel-summary{
+  font-size: calc(var(--text-size) - 0.1rem);
+}

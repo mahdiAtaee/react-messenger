@@ -1,0 +1,108 @@
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 11px 2px #0003;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  background-color: #fff;
+  z-index: 9;
+  transition: 0.3s ease;
+}
+
+.sidebar.open {
+  width: 250px;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 11px 2px #0003;
+}
+
+.sidebar div.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebar ul.action-links {
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar ul li a .img-wrapper {
+  margin-left: 1rem;
+  position: relative;
+  padding: 0.2rem;
+  height: 46px;
+}
+
+.sidebar ul li a .img-wrapper img {
+  width: 35px;
+  height: 35px;
+  padding: 0.2rem;
+}
+
+.sidebar ul li a span.title {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  position: absolute;
+  left: -100px;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.sidebar.open ul li a span.title {
+  left: 3rem;
+  opacity: 1;
+}
+
+.sidebar ul li.active a .img-wrapper img {
+  position: relative;
+  z-index: 12;
+  filter: invert(1);
+}
+
+.sidebar ul li.active a .img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 146, 10, 1) 0%,
+    rgba(255, 89, 104, 1) 49%,
+    rgb(21 142 226) 100%
+  );
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.sidebar ul li.active a .img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 6;
+  border-radius: 20px;
+}

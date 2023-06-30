@@ -1,0 +1,40 @@
+.Main .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.Main .footer .input-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.Main .footer .input-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  padding: 0.5rem;
+  outline: none;
+  background-color: var(--gray-color);
+}
+
+.Main .footer .input-wrapper .control-text {
+  position: absolute;
+  width: max-content;
+  left: 0;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+
+.Main .footer .input-wrapper .control-text img {
+  width: 25px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.middle .friends-list .nav-item {
+  margin-bottom: 1rem;
+}
+
+.middle .friends-list a {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  padding-right: 0;
+}
+
+.middle .friends-list a .avatar {
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.middle .friends-list a .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.middle .friends-list a .content {
+  width: 70%;
+}
+
+.middle .friends-list a .content span.username {
+  font-size: calc(var(--text-size) + 0.2);
+  display: block;
+  font-family: "vazir-bold";
+  color: var(--text-color);
+}
+
+.middle .friends-list a .content span.chat-summary {
+  font-size: var(--text-size);
+  display: block;
+  color: var(--text-color);
+}

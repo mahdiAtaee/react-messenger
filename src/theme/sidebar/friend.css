@@ -1,0 +1,67 @@
+.sidebar.open .friend-summary .friend {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar .friend-summary .friend {
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  transition: 0.4s ease-in;
+}
+
+
+.sidebar .friend-summary .friend .avatar {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.sidebar .friend-summary .friend .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  position: relative;
+}
+
+.sidebar .friend-summary .friend .username {
+  margin-right: 1rem;
+  position: absolute;
+  left: -100px;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.sidebar.open .friend-summary .friend .username {
+  left: 3rem;
+  opacity: 1;
+}
+
+.sidebar .friend-summary .friend .avatar::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  border: 1px solid #fff;
+}
+
+.sidebar .friend-summary .friend .avatar.online::after {
+  background-color: var(--green-color);
+}
+
+.sidebar .friend-summary .friend .avatar.offline::after {
+  background-color: var(--red-color);
+}
+
+.sidebar .friend-summary .friend .avatar.idle::after {
+  background-color: var(--yellow-color);
+}

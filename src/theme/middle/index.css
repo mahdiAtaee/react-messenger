@@ -1,0 +1,25 @@
+.middle {
+  position: fixed;
+  right: 100px;
+  /* padding: 1rem 1rem 0 0; */
+  padding:  1rem;
+  padding-top: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 11px 1px #0003;
+  overflow: hidden;
+}
+
+.middle .middle-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-color);
+  text-align: right;
+  margin-bottom: 1rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
